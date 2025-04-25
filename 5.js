@@ -1,27 +1,15 @@
-let str="How are you?";
-function countVowels(str)
-{
-    let c=0;
-for(let i=0;i<str.length;i++){
-    if(str[i]=="a"||str[i]=="A")
-    {
-        c++;
-    }
-        else if(str[i]=="e"||str[i]=="E")
-            {
+let str = "Hi";
+
+function countVowels(str) {
+    let c = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if ("aeiou".includes(str[i].toLowerCase())) {
             c++;
         }
-            else if(str[i]=="i"||str[i]=="I"){
-                c++;}
+    }
 
-                else if(str[i]=="o"||str[i]=="O"){
-                    c++;}
+    alert("Total vowels = " + c);
+}
 
-                    else if(str[i]=="u"||str[i]=="U"){
-                        c++;}
-
-                    }
-                    alert("total vowels="+c);
-                }
-
-countVowels (str);
+countVowels(str);
