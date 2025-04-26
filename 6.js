@@ -23,7 +23,7 @@ switch(c){
     case 3:
         let taskIndex = parseInt(prompt("Enter task index to delete:"));
                 if (taskIndex >= 0 && taskIndex < tasks.length) {
-                    tasks.splice(taskIndex, 1); // Remove task from array
+                    tasks.splice(taskIndex, 1);
                     console.log("Task deleted.");
                 } else {
                     console.log("Invalid index.");
@@ -38,8 +38,7 @@ switch(c){
                 console.log("Invalid option! Please choose a valid option (1-4).");
                 break;
         }
-    } while (choice !== 4); // Loop until user chooses to exit
-}
+    } while (choice !== 4); 
 
-// Call the menu function to start the process
+
 menu();
