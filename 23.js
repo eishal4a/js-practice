@@ -7,4 +7,3 @@ async function convert() {
     const rate = data.rates[to];
     document.getElementById("result").innerText = `Converted: ${(amount * rate).toFixed(2)}`;
   }
-  
